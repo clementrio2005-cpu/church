@@ -1,0 +1,14 @@
+:root{
+    --darkGreen :#0b5550;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    overflow-x: hidden;
+}
