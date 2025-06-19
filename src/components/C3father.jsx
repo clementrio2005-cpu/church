@@ -1,6 +1,6 @@
 import React from 'react'
 import '../styles/CFather.css'
-import  cfather from '../assets/fatherImg/father.jpg'
+import  cfather from '../assets/fatherImg/father3.jpg'
 const CFather = () => {
   return (
     <section className="current-father">
@@ -11,8 +11,8 @@ const CFather = () => {
         </section>
         <section className="section-content-cfather">
           <header className="heading-father">
-            <h1 className="h1-father-name">Cyril of Jerusalem</h1>
-            <p className='content-para1-father'>- father of st. joseph the worker</p>
+            <h1 className="h1-father-name">Fr. Jerome gnana prabu</h1>
+            <p className='content-para1-father'>- Parish prest</p>
             <p className="content-para2-father">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Non repellat quod veniam ad, eaque quo?
 
