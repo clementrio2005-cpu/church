@@ -1,14 +1,22 @@
-:root{
-    --darkGreen :#0b5550;
-}
+@import "tailwindcss";
 
+ body{
+    @apply bg-blue-50;
+    font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+   overflow-x: hidden;
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-body{
-    width: 100%;
-    overflow-x: hidden;
-}
+    
+ }
+ body::-webkit-scrollbar{
+      display: none;
+    }
+
+ 
+ @theme{
+ --color-green: #0b5550;
+ --color-unknown : rgb(235, 232, 232);
+ --font-new : "Noto Sans Sunuwar", sans-serif;
+
+ }

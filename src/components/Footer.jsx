@@ -1,54 +1,41 @@
-import React from 'react'
-import '../styles/Footer.css'
-
+import React from "react";
+import churchLogo from "../assets/churchImg/logoChurch.jpg";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <footer className="footer">
-    <section>
-      <div className="footer-section">
-        <div className="footer-section-1">
-          <h3>St. Mary's Church</h3>
-          <p>"Where faith, love, and community come together."</p>
-          <p>123 Church Street, City, State, ZIP Code</p>
-          <p>Phone: (123) 456-7890</p>
-          <p>
-            Email:
-            <a href="mailto:contact@churchname.org">contact@churchname.org</a>
-          </p>
-          <div>
-            <a href="#"><img src="facebook-icon.png" alt="Facebook" /></a>
-            <a href="#"><img src="instagram-icon.png" alt="Instagram" /></a>
-            <a href="#"><img src="twitter-icon.png" alt="Twitter" /></a>
+    <footer className="bg-green text-white pt-10 pb-6 px-4 md:px-16 mt-10">
+      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-10 items-start">
+        {/* Logo & Info */}
+        <aside className="flex flex-col items-center md:items-start gap-3">
+          <img src={churchLogo} className="w-28 h-20 object-cover rounded shadow-lg mb-2" alt="Church Logo" />
+          <p className="font-bold text-xl">St. Mary's Church</p>
+          <span className="font-light text-sm text-gray-200 mb-2 text-center md:text-left">
+            Where faith, love, and community come together.
+          </span>
+          <div className="flex flex-col gap-1 text-gray-300 text-sm">
+            <span>Phone: (123) 456-7890</span>
+            <span>Email: contact@churchname.org</span>
           </div>
-        </div>
-        <div className="footer-section-2">
-          <h4>Quick Links</h4>
-          <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Events</a></li>
-            <li><a href="#">Donate</a></li>
-            <li><a href="#">Contact Us</a></li>
-          </ul>
-        </div>
-        <div className="footer-section-3">
-          <h4>Stay Connected</h4>
-          <p>"Receive updates and inspiration from the church"</p>
+          
+        </aside>
+        {/* Quick Links */}
+        <nav className="flex flex-col gap-2">
+          <h4 className="text-lg text-white mb-2">Quick Links</h4>
+          <Link to={"/"} className="hover:text-yellow-400 transition">Home</Link>
+          <Link to={"/fathers"} className="hover:text-yellow-400 transition">Our Fathers</Link>
+          <Link to={"/material"} className="hover:text-yellow-400 transition">Materials</Link>
+          <Link to={"/about"} className="hover:text-yellow-400 transition">About</Link>
+          <Link to={"/contact"} className="hover:text-yellow-400 transition">Contact</Link>
+        </nav>
+        {/* Stay Connected */}
+        <div className="flex flex-col gap-2">
+          <h4 className="text-lg text-white mb-2">Stay Connected</h4>
+          <p className="text-gray-200">"Receive updates and inspiration from the church"</p>
         </div>
       </div>
-      <div className="footer-bottom-1">
-        <p>
-          "For where two or three are gathered in my name, there am I with
-          them." – Matthew 18:20
-        </p>
-      </div>
-      <div className="footer-bottom-2">
-        <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a>
-      </div>
-    </section>
-  </footer>
-  )
-}
+    </footer>
+  );
+};
 
-export default Footer
+export default Footer;

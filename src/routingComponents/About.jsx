@@ -1,51 +1,85 @@
-import React from 'react'
-import './About.css'
+import React from "react";
+const historyContent = [
+    {
+        title: "Welcome Message",
+        text: `Dear brothers and sisters in Jesus Christ. I am Fr. Jerome Gnana Prabu, Parish Priest of St. Joseph The Worker Church, Thuvakudi, near BHEL Township. I wish to share with you the journey and needs of our parish community.`,
+    },
+    {
+        title: "Our Parish Community",
+        text: `Our church serves about 1300 Catholic families in Thuvakudimalai, including the main parish and 11 substations. Since 1969, our church has been a spiritual home for many.`,
+    },
+    {
+        title: "Challenges Faced",
+        text: `Over the years, the church building has suffered damage, especially to the roof, making it unsafe for gatherings. Despite several repair attempts, the issues persist, affecting our ability to hold celebrations.`,
+    },
+    {
+        title: "A New Beginning",
+        text: `After much discussion, the Parish Council decided to construct a new church with better facilities. A committee was formed to plan and recommend the best way forward.`,
+    },
+    {
+        title: "Planning & Approval",
+        text: `The committee, after consulting engineers and architects, concluded that renovation was not feasible. Our Bishop has granted permission to build a new church, and preparations are underway.`,
+    },
+    {
+        title: "Our Vision",
+        text: `We aim to build a larger church to accommodate all devotees, especially during Sunday Mass. The estimated cost is about Rs. 4 Crores.`,
+    },
+    {
+        title: "Appeal for Support",
+        text: `We humbly request your prayers and generous contributions to help us realize this dream. Every donation, big or small, brings us closer to our goal. For more details, please contact the parish priest.`,
+    },
+    {
+        title: "Thank You",
+        text: `Thank you for your support and prayers. Yours in Christ Jesus, Fr. J. Jerome Gnana, Parish Priest, Kailasapuram, Trichy-14.`,
+    },
+];
+
 const About = () => {
-  return (
-    <section>
-      <div className="container">
-        <section className="header-section">
-            <h1>Our Church: A Legacy of Faith & Renewal</h1>
-            <p className="header-box">Embracing tradition, evolving for the future—our journey of faith continues.</p>
-        </section>
-
-        <section className="section">
-            <h2>The Beginning of Our Church</h2>
-            <img src="https://source.unsplash.com/200x200/?portrait,man" alt="Founder" className="person-photo"/>
-            <p>Founded in 1895 by Reverend James Whitmore, our church was a beacon of faith and hope for the growing community...</p>
-            <p>As years passed, it became a sanctuary for worship, community gatherings, and a source of spiritual guidance for generations.</p>
-        </section>
-
-        <section className="section">
-            <h2>Our Journey: From Past to Present</h2>
-            <div className="history-block">
-                <h3>The Old Church</h3>
-                <p>With its wooden pews and stained-glass windows, the old church stood as a testament to faith and unity...</p>
-                <p>Over time, the need for a larger, more accessible space became clear, leading to a new vision for our church.</p>
-                <div className="history-images">
-                    <img src="https://source.unsplash.com/300x200/?old-church" alt="Old Church 1"/>
-                    <img src="https://source.unsplash.com/300x200/?historic-church" alt="Old Church 2"/>
+    return (
+        <div
+            className="min-h-screen flex items-center justify-center py-12 px-4 " 
+        >
+            <div className="w-full max-w-3xl bg-white/80 rounded-2xl shadow-2xl p-8 backdrop-blur-md border border-white/40">
+                <h1 className="text-4xl font-extrabold text-center text-green mb-10 drop-shadow-lg">
+                    History of Our Church
+                </h1>
+                <div className="relative border-l-4 border-green-100">
+                    {historyContent.map((section, idx) => (
+                        <div
+                            key={idx}
+                            className="mb-10 ml-6 group"
+                            style={{ animation: `fadeInUp 0.6s ease ${idx * 0.15 + 0.2}s both` }}
+                        >
+                            <span className="absolute -left-3 flex items-center justify-center w-6 h-6 bg-green-500 rounded-full ring-4 ring-white shadow-lg group-hover:scale-110 transition-transform duration-300">
+                                <svg className="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                    <circle cx="10" cy="10" r="10" />
+                                </svg>
+                            </span>
+                            <div className="bg-white rounded-lg shadow-lg p-6 transition-transform duration-300 group-hover:scale-105">
+                                <h2 className="text-2xl font-semibold text-green-700 mb-2">{section.title}</h2>
+                                <p className="text-gray-700 leading-relaxed">{section.text}</p>
+                            </div>
+                        </div>
+                    ))}
                 </div>
+                <style>
+                    {`
+                    @keyframes fadeInUp {
+                        from {
+                            opacity: 0;
+                            transform: translateY(40px);
+                        }
+                        to {
+                            opacity: 1;
+                            transform: translateY(0);
+                        }
+                    }
+                    `}
+                </style>
             </div>
-            <div className="history-block">
-                <h3>The Vision for Renewal</h3>
-                <p>Recognizing the growing needs of our congregation, we embarked on a transformative journey...</p>
-                <p>Through faith, dedication, and the generosity of our community, we laid the foundation for a new place of worship.</p>
-            </div>
-            <div className="history-block">
-                <h3>The New Church</h3>
-                <p>Our newly constructed church stands as a symbol of faith, renewal, and unity. Designed to accommodate our growing congregation, the new church features a modern sanctuary, state-of-the-art facilities, and a welcoming space for all.</p>
-                <p>Preserving elements from our old church, including the historic stained-glass windows and cross, we have blended tradition with innovation.</p>
-                <p>With expanded seating, enhanced acoustics, and community spaces, the new church is more than a building—it is a home for worship, celebration, and fellowship.</p>
-                <div className="history-images">
-                    <img src="https://source.unsplash.com/300x200/?modern-church" alt="New Church 1"/>
-                    <img src="https://source.unsplash.com/300x200/?church-interior" alt="New Church 2"/>
-                </div>
-            </div>
-        </section>
-    </div>
-    </section>
-  )
-}
+        </div>
+    );
+};
 
-export default About
+// Updated to use Tailwind CSS for styling
+export default About;

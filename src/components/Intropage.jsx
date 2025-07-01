@@ -1,48 +1,32 @@
 import React, { useEffect, useState } from "react";
-import church1 from "../assets/churchImg/oldChurch.jpg";
-import church2 from "../assets/churchImg/newChurch3.jpg";
-import "../styles/Intropage.css";
-import { Link } from "react-router-dom";
+import ImageSlider from './ImageSlider'
 const Intropage = () => {
-
-    const [image,setImage] = useState(false)
-
-   
-    
+  const [image, setImage] = useState(false);
 
   return (
-    <section className="intropage-sec">
-      <section className="section1-intro">
-        <section className="content-sec">
-          <h2 className="h2-intro">
-            church of st.joseph <span className="worker">the worker</span>
-          </h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis illo impedit pariatur alias ab vitae nam quae consectetur inventore, nulla quod ducimus voluptas voluptate expedita!
-            
-          </p>
-          <button>
-            <Link to="about">read more</Link>
-          </button>
-        </section>
-      </section>
-      <section className="section2-intro">
-        <div className="div-figure-intro">
-          {image ? (<figure>
-            <span className="old-figure">old church</span>
-            <img src={church1} alt="" className="imge-church1" />
-          </figure>):
-            (
-              <figure>
-                <span className="old-figure">new church</span>
-                <img src={church2} alt="" className="imge-church1" />
+    <section className="grid grid-rows-2 grid-cols-1 md:grid-rows-1 md:grid-cols-2 w-full h-[85vh] md:h-[75vh]  ">
+      <div className=" h-full flex flex-col justify-center ms-7 gap-4">
+        <h2 className=" text-4xl font-bold font-sans tracking-wide text-gray-700">
+          Church of ST.Joseph <span className="block">The Worker</span>
+        </h2>
+        <p className="">
+           A community of faith where hearts unite to praise and worship God. Join us in our journey of spiritual growth, fellowship, and service to others.
 
-              </figure>
-            )
-          }
+
+
+         </p>
+         <div className="flex gap-8 text-sm md:text-lg">
+            <button className="border-2 rounded p-2 bg-green text-white hover:bg-transparent hover:text-green cursor-pointer">Read More</button>
+            <button className="text-green font-bol border-2 p-2 rounded cursor-pointer hover:bg-green hover:text-white">Join Us</button>
+         </div>
+      </div>
+      <div className=" grid place-items-center ">
+        <div>
+          <ImageSlider/>
         </div>
-      </section>
+      </div>
     </section>
+
   );
 };
 
