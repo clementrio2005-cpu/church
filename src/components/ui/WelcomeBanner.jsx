@@ -25,29 +25,33 @@ export const WelcomeBanner = () => {
             paragraph={
               "meet our dedicated clearly members who guide our spiritual journey."
             }
-          />
+            link={"/fathers"}
+            />
           <CardForWelcome
             icon={<MdOutlineEvent />}
             box_name={"upcoming events"}
             paragraph={
               "stay updated with our upcoming services, events, and activities. so stay tuned."
             }
+            link={"/events"}
             
-          />
+            />
           <CardForWelcome
             icon={<SiMaterialformkdocs />}
             box_name={"materials & donations"}
             paragraph={
               "support our church building project with your generous contributions."
             }
-          />
+            link={"/material"}
+            />
           <CardForWelcome
             icon={<MdWifiCalling />}
             box_name={"contact us"}
             paragraph={
               "contact us, if you have any queries or anything to the provided details. "
             }
-          />
+            link={"/contact"}
+            />
         </section>
       </div>
     </section>

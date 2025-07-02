@@ -12,7 +12,7 @@ const C3Father = () => {
         />
       </div>
       <div className=" md:w-[60vw] h-full flex justify-center items-center ">
-        <header className="flex flex-col  items-center capitalize gap-3  ">
+        <header className="flex flex-col text-center  items-center capitalize gap-3  ">
           <h1 className="text-5xl font-bold font-sans ">Fr. Jerome gnana prabu</h1>
           <p className="font-bold">
            - Parish prest

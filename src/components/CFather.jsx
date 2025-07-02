@@ -12,7 +12,7 @@ const CFather = () => {
         />
       </div>
       <div className=" md:w-[60vw] h-full flex justify-center items-center ">
-        <header className="flex flex-col  items-center capitalize gap-3  ">
+        <header className="flex text-center flex-col  items-center capitalize gap-3  ">
           <h1 className="text-5xl font-bold font-sans ">pope francis</h1>
           <p className="font-bold">
             - father of st. joseph the worker

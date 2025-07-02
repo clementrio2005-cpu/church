@@ -28,7 +28,10 @@ const Navbar = () => {
   return (
     <section className="bg-green w-full h-full">
       <nav className="flex items-center justify-between">
-        <img src={churchLogo} className="h-20 md:h-22 w-40" />
+        <Link to={"/"}>
+
+          <img src={churchLogo} className="h-20 md:h-22 w-40" />
+        </Link>
         {isMobile ? (
           <ul className="ul-nav flex text-xl gap-6 me-3 text-white">
             <Link to="/" className="hover:text-gray-300">

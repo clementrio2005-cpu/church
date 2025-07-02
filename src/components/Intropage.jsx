@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import ImageSlider from './ImageSlider'
+import { Link } from "react-router-dom";
 const Intropage = () => {
   const [image, setImage] = useState(false);
 
@@ -16,8 +17,8 @@ const Intropage = () => {
 
          </p>
          <div className="flex gap-8 text-sm md:text-lg">
-            <button className="border-2 rounded p-2 bg-green text-white hover:bg-transparent hover:text-green cursor-pointer">Read More</button>
-            <button className="text-green font-bol border-2 p-2 rounded cursor-pointer hover:bg-green hover:text-white">Join Us</button>
+            <Link to={"/about"} className="border-2 rounded p-2 bg-green text-white hover:bg-transparent hover:text-green cursor-pointer">Read More</Link>
+            <Link to={"/contact"} className="text-green font-bol border-2 p-2 rounded cursor-pointer hover:bg-green hover:text-white">Join Us</Link>
          </div>
       </div>
       <div className=" grid place-items-center ">

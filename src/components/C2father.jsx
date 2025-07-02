@@ -11,7 +11,7 @@ const C2Father = () => {
         />
       </div>
       <div className=" md:w-[60vw] h-full flex justify-center items-center ">
-        <header className="flex flex-col justify-start items-center capitalize gap-3  ">
+        <header className="flex text-center flex-col justify-start items-center capitalize gap-3  ">
           <h1 className="text-5xl font-bold font-sans ">savarimuthu Arokiataj</h1>
           <p className="font-bold">
             - father of st. joseph the worker
