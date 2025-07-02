@@ -7,7 +7,7 @@ import C3father from "../components/C3father";
 import WelcomeBanner from "../components/ui/WelcomeBanner"
 const Home = () => {
   return (
-    <section className="section-header">
+    <section className="section-header mb-10">
       <Intropage />
       <WelcomeBanner/>
        <CFather />

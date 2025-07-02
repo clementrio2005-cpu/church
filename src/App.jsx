@@ -8,6 +8,7 @@ import Footer from "./components/Footer";
 import {ScrollShadow} from "@heroui/scroll-shadow";
 import MaterialsRoutes from "./routingComponents/MaterialsRoute";
 import OurFather from "./routingComponents/OurFather";
+import { Events } from "./routingComponents/Events";
 const App = () => {
   return (
     <main>
@@ -19,6 +20,7 @@ const App = () => {
         <Route path='/contact' element={<Contact />} />
         <Route path='/material' element={<MaterialsRoutes />} /> 
         <Route path='/fathers' element={<OurFather />} /> 
+        <Route path='/events' element={<Events />} /> 
       </Routes>
       <Footer/>
       </ScrollShadow>
