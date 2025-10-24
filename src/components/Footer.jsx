@@ -24,7 +24,7 @@ const Footer = () => {
           <h4 className="text-lg text-white mb-2">Quick Links</h4>
           <Link to={"/"} className="hover:text-yellow-400 transition">Home</Link>
           <Link to={"/fathers"} className="hover:text-yellow-400 transition">Our Fathers</Link>
-          <Link to={"/material"} className="hover:text-yellow-400 transition">Materials</Link>
+          <Link to={"/Constructions"} className="hover:text-yellow-400 transition">Constructions</Link>
           <Link to={"/material"} className="hover:text-yellow-400 transition">Materials</Link>
           <Link to={"/about"} className="hover:text-yellow-400 transition">About</Link>
           <Link to={"/contact"} className="hover:text-yellow-400 transition">Contact</Link>
