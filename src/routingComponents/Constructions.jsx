@@ -13,7 +13,7 @@ const Gallery = () => {
         {/* Image 1 */}
         <div className="bg-white rounded-2xl shadow-md overflow-hidden">
           <img
-            src="https://via.placeholder.com/300x200"
+            src="../assets/construction1.jpg"
             alt="Placeholder 1"
             className="w-full h-48 object-cover"
           />
