@@ -44,6 +44,9 @@ const Navbar = () => {
             <Link to="/material" className="hover:text-gray-300">
               <li className="li-nav">Materials</li>
             </Link>
+            <Link to="/material" className="hover:text-gray-300">
+              <li className="li-nav">Materials</li>
+            </Link>
             <Link to="/about" className="hover:text-gray-300">
               <li className="li-nav">About</li>
             </Link>
