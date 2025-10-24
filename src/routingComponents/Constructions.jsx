@@ -22,7 +22,7 @@ const Gallery = () => {
         {/* Image 2 */}
         <div className="bg-white rounded-2xl shadow-md overflow-hidden">
           <img
-            src="https://via.placeholder.com/300x200"
+            src="../assets/construction2.jpg"
             alt="Placeholder 2"
             className="w-full h-48 object-cover"
           />
@@ -31,7 +31,7 @@ const Gallery = () => {
         {/* Image 3 */}
         <div className="bg-white rounded-2xl shadow-md overflow-hidden">
           <img
-            src="https://via.placeholder.com/300x200"
+            src="../assets/construction3.jpg"
             alt="Placeholder 3"
             className="w-full h-48 object-cover"
           />
@@ -40,20 +40,13 @@ const Gallery = () => {
         {/* Image 4 */}
         <div className="bg-white rounded-2xl shadow-md overflow-hidden">
           <img
-            src="https://via.placeholder.com/300x200"
+            src="../assets/construction4.jpg"
             alt="Placeholder 4"
             className="w-full h-48 object-cover"
           />
         </div>
 
-        {/* Optional Image 5 */}
-        <div className="bg-white rounded-2xl shadow-md overflow-hidden">
-          <img
-            src="https://via.placeholder.com/300x200"
-            alt="Placeholder 5"
-            className="w-full h-48 object-cover"
-          />
-        </div>
+       
       </div>
     </div>
   );
