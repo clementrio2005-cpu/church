@@ -1,10 +1,10 @@
 import React from "react";
 
 
-import construction1 from "./assets/construction1.jpg";
-import construction2 from "./assets/construction2.jpg";
-import construction3 from "./assets/construction3.jpg";
-import construction4 from "./assets/construction4.jpg";
+import construction1 from "../assets/construction1.jpg";
+import construction2 from "../assets/construction2.jpg";
+import construction3 from "../assets/construction3.jpg";
+import construction4 from "../assets/construction4.jpg";
 
 
 const Constructions = () => {
