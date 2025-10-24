@@ -13,6 +13,7 @@ const SideMenu = ({ onClose }) => (
         <Link to="/" onClick={onClose}><li>Home</li></Link>
         <Link to="/fathers" onClick={onClose}><li>Our Fathers</li></Link>
         <Link to="/material" onClick={onClose}><li>Materials</li></Link>
+        <Link to="/material" onClick={onClose}><li>Materials</li></Link>
         <Link to="/about" onClick={onClose}><li>About</li></Link>
         <Link to="/contact" onClick={onClose}><li>Contact</li></Link>
       </ul>
