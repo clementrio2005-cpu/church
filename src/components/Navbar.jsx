@@ -42,7 +42,7 @@ const Navbar = () => {
               <li className="li-nav">Our Fathers</li>
             </Link>
             <Link to="/material" className="hover:text-gray-300">
-              <li className="li-nav">Materials</li>
+              <li className="li-nav">Constructions</li>
             </Link>
             <Link to="/material" className="hover:text-gray-300">
               <li className="li-nav">Materials</li>
