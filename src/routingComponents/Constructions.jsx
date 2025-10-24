@@ -7,7 +7,7 @@ import construction3 from "./assets/construction3.jpg";
 import construction4 from "./assets/construction4.jpg";
 import construction5 from "./assets/construction5.jpg";
 
-const Gallery = () => {
+const Constructions = () => {
   return (
     <div className="min-h-screen bg-gray-100 flex flex-col items-center py-12">
       {/* Heading */}
@@ -43,4 +43,4 @@ const Gallery = () => {
   );
 };
 
-export default Gallery;1 from "./assets/img1.jpg";
+export default Constructions;
