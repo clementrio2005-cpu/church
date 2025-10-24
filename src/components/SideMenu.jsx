@@ -20,7 +20,7 @@ const SideMenu = ({ open, onClose }) => {
         <nav className="flex flex-col gap-6 px-8 mt-8 text-lg">
           <Link to="/" onClick={onClose}>Home</Link>
           <Link to="/fathers" onClick={onClose}>Our Fathers</Link>
-          <Link to="/material" onClick={onClose}>Materials</Link>
+          <Link to="/Constructions" onClick={onClose}>Constructions</Link>
           <Link to="/material" onClick={onClose}>Materials</Link>
           <Link to="/about" onClick={onClose}>About</Link>
           <Link to="/contact" onClick={onClose}>Contact</Link>
