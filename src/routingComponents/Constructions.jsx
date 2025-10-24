@@ -5,7 +5,7 @@ const Gallery = () => {
     <div className="min-h-screen bg-gray-100 flex flex-col items-center py-10">
       {/* Heading */}
       <h1 className="text-4xl font-bold text-gray-800 mb-8">
-        My Photo Gallery
+        Updates
       </h1>
 
       {/* Image Grid */}
