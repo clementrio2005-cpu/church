@@ -21,6 +21,7 @@ const SideMenu = ({ open, onClose }) => {
           <Link to="/" onClick={onClose}>Home</Link>
           <Link to="/fathers" onClick={onClose}>Our Fathers</Link>
           <Link to="/material" onClick={onClose}>Materials</Link>
+          <Link to="/material" onClick={onClose}>Materials</Link>
           <Link to="/about" onClick={onClose}>About</Link>
           <Link to="/contact" onClick={onClose}>Contact</Link>
         </nav>
