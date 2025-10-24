@@ -1,6 +1,6 @@
 import React from "react";
 
-const Gallery = () => {
+const Constructions = () => {
   return (
     <div className="min-h-screen bg-gray-100 flex flex-col items-center py-10">
       {/* Heading */}
@@ -52,4 +52,4 @@ const Gallery = () => {
   );
 };
 
-export default Gallery;
+export default Constructions;
