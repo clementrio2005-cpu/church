@@ -9,9 +9,9 @@ import construction4 from "../assets/construction4.jpg";
 
 const Constructions = () => {
   return (
-    <div className="min-h-screen bg-gray-100 flex flex-col items-center py-12">
+    <div className="min-h-screen bg-gray-100 flex flex-col items-center space-y-12 py-6">
       {/* Heading */}
-      <h1 className="text-5xl font-extrabold text-gray-800 mb-12 tracking-wide">
+      <h1 className="text-5xl font-semibold text-gray-800 mb-12 tracking-wide">
         Construction Updates
       </h1>
 
@@ -30,7 +30,7 @@ const Constructions = () => {
           <img
             src={construction2}
             alt="Gallery 2"
-            className="w-full h-auto object-contain rounded-2xl"
+            className="w-900 h-500 object-contain rounded-2xl"
           />
         </div>
 
@@ -39,7 +39,7 @@ const Constructions = () => {
           <img
             src={construction3}
             alt="Gallery 3"
-            className="w-full h-auto object-contain rounded-2xl"
+            className="w-900 h-500 object-contain rounded-2xl"
           />
         </div>
 
@@ -48,7 +48,7 @@ const Constructions = () => {
           <img
             src={construction4}
             alt="Gallery 4"
-            className="w-full h-auto object-contain rounded-2xl"
+            className="w-900 h-500 object-contain rounded-2xl"
           />
         </div>
 
