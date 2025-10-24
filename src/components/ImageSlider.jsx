@@ -2,12 +2,18 @@ import React, { useState, useEffect } from "react";
 
 import church1 from '../assets/church1.jpg'
 import church2 from '../assets/church2.jpg'
+import church3 from '../assets/church3.jpg'
+import church4 from '../assets/church4.jpg'
+import church5 from '../assets/church5.jpg'
 
 const SimpleCarousel = () => {
 
   const images = [
     church1, // Replace with your actual image paths
-    church2
+    church2,
+    church3,
+    church4,
+    church5
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
