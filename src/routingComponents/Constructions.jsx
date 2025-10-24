@@ -54,7 +54,7 @@ const Constructions = () => {
 
         
       </div>
-    </div>
+    
   );
 };
 
